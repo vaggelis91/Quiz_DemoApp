@@ -1,0 +1,81 @@
+﻿@{
+	ViewBag.Title = "QuizStarted";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")>
+	<script src=@Url.Content("https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")></script>
+	<script src=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")></script>
+    <title>FormSubmitted</title>
+	<style>
+		body {
+			padding: 0px;
+			margin: 0px;
+			overflow-x: hidden;
+			background-color:#f7ecec;
+		}
+		header {
+			padding: 40px 0px 40px 0px;
+			text-align: center;
+			font-size: 1.8em;
+			background-color: #e64a0f;
+			color: white;
+		}
+		#background {
+			background-image: url(@Url.Content("~/Content/pics/index1.jpg"));
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 80%;
+			height: 530px;
+			width: 100%
+		}
+
+		h2{
+			color:#673927;
+			text-align:center;
+			padding-top:100px;
+		}
+
+		#buttonDiv{
+			text-align:center;
+			padding-bottom:100px;
+			padding-top:10px;
+		}
+
+		#goToHomeBtn{
+			color:black;
+			border: solid 1px #f2c2c2;
+		}
+
+		footer {
+			padding: 40px 0px 40px 0px;
+			text-align: center;
+			font-size: 1.1em;
+			background-color: #e64a0f;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="row">Quiz</header>
+
+		<div class="row">
+			<div id="background"></div>
+		</div>
+		
+		<h2>@ViewBag.status</h2>
+
+		<div id="buttonDiv">
+			<a id="goToHomeBtn" href="@Url.Action("Home", "Quiz")" class="btn btn-default">Back to home</a>
+		</div>
+
+		<footer class="row">Copyright 2017</footer>
+	</div>
+		
+</body>
+</html>

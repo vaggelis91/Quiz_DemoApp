@@ -1,0 +1,84 @@
+﻿@model IEnumerable<MVCDemo.Models.Quiz>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")>
+	<script src=@Url.Content("https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")></script>
+	<script src=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")></script>
+    <title>NewQuiz</title>
+
+	<style>
+		.table-responsive {
+			padding: 50px 20px 0px 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="table-responsive">
+			<table id="quizTable" class="table table-bordered table-condensed table-striped">
+				@foreach (MVCDemo.Models.Quiz val in Model)
+				{
+					<tbody>
+						<tr class="quizContent">
+							<td>
+								@Html.DisplayFor(m => val.Question)
+							</td>
+						</tr>
+						<tr class="quizContent">
+							<td>
+								<label><input type="checkbox">&nbsp; A.&nbsp;@Html.DisplayFor(m => val.Answer1)</label>
+							</td>
+						</tr>
+						<tr class="quizContent">
+							<td>
+								<label><input type="checkbox">&nbsp; B.&nbsp;@Html.DisplayFor(m => val.Answer2)</label>
+							</td>
+						</tr>
+						@*In case a question has only two possible answers e.g yes/no*@
+						@if (!string.IsNullOrWhiteSpace(val.Answer3))
+						{
+							<tr class="quizContent">
+								<td>
+									<label><input type="checkbox">&nbsp; C. @Html.DisplayFor(m => val.Answer3)</label>
+								</td>
+							</tr>
+								<tr class="quizContent">
+									<td>
+										<label><input type="checkbox">&nbsp; D. @Html.DisplayFor(m => val.Answer4)</label>
+									</td>
+								</tr>
+						}
+						<tr class="quizAnswers">
+							<td>
+								<label>Correct Answer: @Html.DisplayFor(m => val.correctAnswers)</label>
+							</td>
+						</tr>
+					</tbody>
+				}
+			</table>
+		</div>
+
+
+		<div id="buttonsDiv">
+			<button type="button" id="Btn" class="btn btn-default pull-right" onclick="">Results</button>
+			<button type="button" id="Btn" class="btn btn-default pull-right" onclick="">Back To Home</button>
+		</div>
+
+	</div>
+
+
+
+	<script>
+
+	</script>
+
+</body>
+</html>

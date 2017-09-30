@@ -1,0 +1,182 @@
+﻿@model IEnumerable<MVCDemo.Models.Quiz>
+
+@{
+	ViewBag.Title = "QuizStarted";
+}
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")>
+	<script src=@Url.Content("https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")></script>
+	<script src=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")></script>
+	<script src="~/Scripts/QuizStartedJS.js"></script>
+
+	<style>
+		body {
+			padding: 0px;
+			margin: 0px;
+			overflow-x: hidden;
+		}
+
+		header {
+			padding: 40px 0px 40px 0px;
+			text-align: center;
+			font-size: 1.8em;
+			background-color: #e64a0f;
+			color: white;
+		}
+
+		#back {
+			background-image: url(@Url.Content("~/Content/pics/back1.jpg"));
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 70%;
+			height: 530px;
+			width: 100%
+		}
+
+		#imageText {
+			text-align: center;
+			padding-top: 85px;
+			font-size: 2.5em;
+			color: #ffc9c9;
+			font-family: 'Segoe Print';
+		}
+
+		#lessons {
+			margin: 30px 0px 45px 0px;
+			text-align: center;
+		}
+
+		.col-md-3 {
+			text-align:center;
+			margin-bottom:20px;
+		}
+		.imgWidth{
+			width:100px;
+		}
+
+		.table-responsive {
+			padding: 50px 50px 0px 50px;
+		}
+
+		#buttons{
+			margin: 0px 35px 130px 0px;
+		}
+		#showResultsBtn{
+			border: solid 1px #f2c2c2;
+			color:black;
+		}
+		#backToHomeBtn{
+			border: solid 1px #f2c2c2;
+			margin-right:10px;
+			color:black;
+		}
+
+		footer {
+			padding: 40px 0px 40px 0px;
+			text-align: center;
+			font-size: 1.1em;
+			background-color: #e64a0f;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="row">Quiz</header>
+
+		<div class="row">
+			<div id="back">
+				<p id="imageText"><q>Take a quiz now and test your knowledge!</q></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<h2 id="lessons">Lessons</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/hist.png" alt="history_image"/>
+				<p class="lessons_text">History</p>
+			</div>
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/geo.png" alt="geography_image"/>
+				<p class="lessons_text">Geography</p>
+			</div>
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/phys.png" alt="physics_image"/>
+				<p class="lessons_text">Physics</p>
+			</div>
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/chem.png" alt="chemistry_image"/>
+				<p class="lessons_text">Chemistry</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="table-responsive">
+				<table id="quizTable" class="table table-bordered table-condensed table-striped">
+					@{int count = 0; }
+					@foreach (MVCDemo.Models.Quiz val in Model)
+					{
+						count += 1;
+						<tbody>
+							<tr class="quizContent">
+								<td>
+									@Html.DisplayFor(m => val.Question)
+								</td>
+							</tr>
+							<tr class="quizContent">
+								<td>
+									<label><input type="checkbox">&nbsp; A.&nbsp;@Html.DisplayFor(m => val.Answer1)</label>
+								</td>
+							</tr>
+							<tr class="quizContent">
+								<td>
+									<label><input type="checkbox">&nbsp; B.&nbsp;@Html.DisplayFor(m => val.Answer2)</label>
+								</td>
+							</tr>
+							@*In case a question has only two possible answers e.g yes/no*@
+							@if (!string.IsNullOrWhiteSpace(val.Answer3))
+							{
+								<tr class="quizContent">
+									<td>
+										<label><input type="checkbox">&nbsp; C. @Html.DisplayFor(m => val.Answer3)</label>
+									</td>
+								</tr>
+								<tr class="quizContent">
+									<td>
+										<label><input type="checkbox">&nbsp; D. @Html.DisplayFor(m => val.Answer4)</label>
+									</td>
+								</tr>
+							}
+							<tr class="quizAnswers">
+								<td>
+									<label>Correct Answer: @Html.DisplayFor(m => val.correctAnswers)</label>
+								</td>
+							</tr>
+						</tbody>
+					}
+				</table>
+			</div>
+		</div>
+
+		<div id="buttons">
+			<button id="showResultsBtn" class="btn pull-right">Show Results</button>
+			<a id="backToHomeBtn" href="@Url.Action("Home", "Quiz")" style="" class="btn pull-right">Back to home</a>
+		</div>
+
+		<footer class="row">Copyright 2017</footer>
+	</div>
+		
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+﻿@model MVCDemo.Models.Quiz
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<link rel="stylesheet" href=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")>
+    <title>CreateQuiz</title>
+
+	<style>
+		h2 {
+			text-align:center;
+			padding-bottom:30px;
+		}
+		#notice {
+			color:#724d4d;
+		}
+		#myform {
+			/*padding-bottom: 20px;*/
+		}
+		#newQuestionBtn {
+			margin-right:10px;
+		}
+		#buttonsDiv {
+			padding-bottom: 50px;
+			padding-top: 15px;
+		}
+	</style>
+</head>
+<body class="container-fluid">
+	<h2>Create your own quiz in no time!</h2>
+
+	<form id="myform" action="@Url.Action("NewQuiz", "Quiz")" method='POST'>
+		<div id="mydiv">
+			<div class="form-group">
+				<label for="email">Add Question*</label>
+				<input type="text" class="form-control" name="userQuestion" required>
+			</div>
+			<div class="form-group">
+				<label for="pwd">Add Answer A*</label>
+				<input type="text" class="form-control" name="userAnswerA" required>
+			</div>
+			<div class="form-group">
+				<label for="pwd">Add Answer B* &nbsp;<span id="notice">(If there are only two possible answers leave the rest empty)</span></label>
+				<input type="text" class="form-control" name="userAnswerB" required>
+			</div>
+			<div class="form-group">
+				<label for="pwd">Add Answer C</label>
+				<input type="text" class="form-control" name="userAnswerC">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Add Answer D</label>
+				<input type="text" class="form-control" name="userAnswerD">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Correct Answer/s*</label>
+				<input type="text" class="form-control" name="userCorrectAnswer" required>
+			</div>
+			<button type="submit" id="startQuizBtn" class="btn btn-default">Start Quiz</button>
+			<div style="padding-bottom:30px;"></div>	
+		</div> 
+	</form>
+
+	<div id="buttonsDiv">
+		<button type="button" id="newQuestionBtn" class="btn btn-default" onclick="appendForm()">New Question</button>
+	</div>
+
+
+	<script>
+		function appendForm() {
+			var newform = $("#mydiv").html();
+			$("#mydiv").after(newform);
+			$("#startQuizBtn").hide();
+		}
+	</script>
+
+</body>
+</html>

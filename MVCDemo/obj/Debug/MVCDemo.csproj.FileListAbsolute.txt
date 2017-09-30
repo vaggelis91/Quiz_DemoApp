@@ -1,0 +1,134 @@
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\ApplicationInsights.config
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\csc.exe
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\csc.exe.config
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\csc.rsp
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\csi.exe
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\csi.rsp
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\System.AppContext.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\vbc.exe
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\vbc.exe.config
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\vbc.rsp
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\VBCSCompiler.exe
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\MVCDemo.dll.config
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\MVCDemo.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\MVCDemo.pdb
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Antlr3.Runtime.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.Web.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Newtonsoft.Json.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Helpers.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Mvc.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Optimization.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Razor.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.WebPages.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.WebPages.Razor.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\WebGrease.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Helpers.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Mvc.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Optimization.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.Razor.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.WebPages.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\System.Web.WebPages.Razor.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Antlr3.Runtime.pdb
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Newtonsoft.Json.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\bin\Microsoft.AI.Web.xml
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csprojResolveAssemblyReference.cache
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\obj\Debug\MVCDemo.dll
+C:\Users\vagge\Desktop\MVCDemo\MVCDemo\obj\Debug\MVCDemo.pdb
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\ApplicationInsights.config
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\csc.exe
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\csc.exe.config
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\csc.rsp
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\csi.exe
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\csi.rsp
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\System.AppContext.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\vbc.exe
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\vbc.exe.config
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\vbc.rsp
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\VBCSCompiler.exe
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\MVCDemo.dll.config
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\MVCDemo.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\MVCDemo.pdb
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Antlr3.Runtime.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.Web.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Newtonsoft.Json.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Helpers.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Mvc.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Optimization.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Razor.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.WebPages.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.WebPages.Razor.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\WebGrease.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Helpers.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Mvc.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Optimization.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.Razor.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.WebPages.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\System.Web.WebPages.Razor.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Antlr3.Runtime.pdb
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Newtonsoft.Json.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\bin\Microsoft.AI.Web.xml
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\obj\Debug\MVCDemo.dll
+C:\Users\vagge\documents\visual studio 2017\Projects\MVCDemo\MVCDemo\obj\Debug\MVCDemo.pdb
+C:\Users\vagge\Documents\Visual Studio 2017\Projects\MVCDemo\MVCDemo\obj\Debug\MVCDemo.csprojResolveAssemblyReference.cache

@@ -1,0 +1,309 @@
+﻿@model MVCDemo.Models.SelectionItems
+
+@{
+	ViewBag.Title = "Home";
+}
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")>
+	<script src=@Url.Content("https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")></script>
+	<script src=@Url.Content("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")></script>
+	<script src="~/Scripts/HomePageJS.js"></script>
+
+	<style>
+		body {
+			padding: 0px;
+			margin: 0px;
+			overflow-x: hidden;
+		}
+
+		header {
+			padding: 40px 0px 40px 0px;
+			text-align: center;
+			font-size: 1.8em;
+			background-color: #e64a0f;
+			color: white;
+		}
+
+		#back {
+			background-image: url(@Url.Content("~/Content/pics/back1.jpg"));
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 70%;
+			height: 530px;
+			width: 100%
+		}
+		#imageText {
+			text-align: center;
+			padding-top: 85px;
+			font-size: 2.5em;
+			color: #ffc9c9;
+			font-family: 'Segoe Print';
+		}
+
+		#lessonsHeader {
+			margin: 30px 0px 45px 0px;
+			text-align: center;
+		}
+
+		.col-md-3 {
+			text-align:center;
+		}
+		.imgWidth{
+			width:100px;
+		}
+		.lessons_text {
+			font-size: 1.2em;
+			margin-top: 5px;
+		}
+
+		#infoText {
+			margin-top: 70px;
+			font-size: 1.7em;
+			text-align: center;
+		}
+		.form-inline {
+			text-align: center;
+			padding: 0px 18px 80px 18px;
+		}
+
+		#contact {
+			margin-top: 50px;
+			padding-bottom: 25px;
+			text-align: center;
+
+		}
+			#contact:hover {
+				cursor: pointer;
+			}
+		#contactSection {
+			margin-bottom:35px;
+			margin:0px 10px;
+		}
+		#sendEmailBtn {
+			margin: 10px 0px 5px 0px;
+			border: solid 1px #f2c2c2;
+		}
+
+		#contactText{
+			text-align:center;
+			padding-bottom:20px;
+		}
+		#showStatsForm:hover {
+			cursor: pointer;
+		}
+
+		#improveText{
+			text-align:center;
+			margin-top:30px;
+		}
+		#statsform{
+			padding:40px 50px 150px 50px;
+		}
+		#submitFormBtn {
+			border: solid 1px #f2c2c2;
+			margin-bottom: 40px;
+		}
+
+		footer {
+			padding: 40px 0px 40px 0px;
+			text-align: center;
+			font-size: 1.1em;
+			background-color: #e64a0f;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="row">Quiz</header>
+
+		<div class="row">
+			<div id="back">
+				<p id="imageText"><q>Take a quiz and test your knowledge!</q></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<h2 id="lessonsHeader">Lessons</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/hist.png" alt="history_image" />
+				<p class="lessons_text">History</p>
+			</div>
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/geo.png" alt="geography_image" />
+				<p class="lessons_text">Geography</p>
+			</div>
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/phys.png" alt="physics_image" />
+				<p class="lessons_text">Physics</p>
+			</div>
+			<div class="col-md-3">
+				<img class="imgWidth" src="~/Content/pics/chem.png" alt="chemistry_image" />
+				<p class="lessons_text">Chemistry</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<p id="infoText">Select lesson, number of questions, category and start your quiz now!</p>
+		</div>
+
+		<div class="row">
+			<form class="form-inline" action="@Url.Action("QuizStarted", "Quiz")" method='POST'>
+				<div class="form-group">
+					<label>Lesson</label>&nbsp;
+					@{
+						List<SelectListItem> lessonsItems = new List<SelectListItem>();
+						foreach (string val in Model.lessons.Split(','))
+						{
+							lessonsItems.Add(new SelectListItem
+							{
+								Text = val
+							});
+						}
+					}
+					@Html.DropDownListFor(model => model.lessons, lessonsItems, null, new { @class = "btn btn-default dropdown-toggle" })
+				</div>
+				&nbsp;&nbsp;
+				<div class="form-group">
+					<label>Questions</label>&nbsp;
+					@{
+						List<SelectListItem> numberOfQuestionsItems = new List<SelectListItem>();
+						foreach (string val in Model.numberOfQuestions.Split(','))
+						{
+							numberOfQuestionsItems.Add(new SelectListItem
+							{
+								Text = val
+							});
+						}
+					}
+					@Html.DropDownListFor(model => model.numberOfQuestions, numberOfQuestionsItems, null, new { @class = "btn btn-default dropdown-toggle" })
+				</div>
+				&nbsp;&nbsp;
+				<div class="form-group">
+					<label>Category</label>&nbsp;
+					@{
+						List<SelectListItem> categoriesItems = new List<SelectListItem>();
+						foreach (string val in Model.categories.Split(','))
+						{
+							categoriesItems.Add(new SelectListItem
+							{
+								Text = val
+							});
+						}
+					}
+					@Html.DropDownListFor(model => model.categories, categoriesItems, null, new { @class = "btn btn-default dropdown-toggle" })
+				</div>
+				&nbsp;
+				<button id="startQuizBtn" type="submit" class="btn btn-default">Start Quiz</button>
+			</form>
+		</div>
+
+		<div class="row" style="text-align:center">OR</div>
+		<div class="row" style="text-align:center"><a style="cursor:pointer" onclick="location.href='@Url.Action("CreateQuiz", "Quiz")'">Create</a> your own quiz!</div>
+
+		<h2 id="contact">Contact Us</h2>
+
+		<div id="contactSection" class="row">
+			<div class="col-md-2">
+				<p><span class="glyphicon glyphicon-phone"></span>&nbsp;Phone: +00 1515151515</p>
+				<p><span class="glyphicon glyphicon-envelope"></span>&nbsp;Email: mail@mail.com</p>
+				<p><span class="glyphicon glyphicon-road"></span>&nbsp;&nbsp;Address: 5th Central Avenue, Greece</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-6 form-group">
+							<input class="form-control" name="name" placeholder="Name" type="text">
+						</div>
+						<div class="col-md-6 form-group">
+							<input class="form-control" name="email" placeholder="Email" type="email" required>
+						</div>
+					</div>
+					<textarea class="form-control" name="commentsBox" placeholder="Comments" rows="5"></textarea>
+					<div class="row">
+						<div class="col-md-12 form-group">
+							<button id="sendEmailBtn" class="btn pull-right">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="contactText">
+				We will be happy to hearing from you. Don't hesitate to send your comments, suggestions or ideas.<br>
+				Please, help us improve filling out our <a id="showStatsForm">special form</a>. Check users <a style="cursor:pointer" onclick="location.href='@Url.Action("ShowStats", "Quiz")'">preferences.</a>
+			</div>
+		</div>
+
+		<h2 class="statsForm" id="improveText">Help us improve!</h2>
+
+		@using (Html.BeginForm("FormSubmitted", "Quiz"))
+		{
+			<div class="statsForm" id="statsform">
+				<form>
+					<div class="form-group">
+						<label>Age:</label>
+						<input type="number" class="form-control" name="age" min="5" max="100" required>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Current Education:</label>
+						<select class="form-control" name="education">
+							<option>High school</option>
+							<option>Senior high school</option>
+							<option>Higher education</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Lessons:</label>
+						<select class="form-control" name="lessonsVariety">
+							<option>There are plenty of lessons</option>
+							<option>There are just enough lessons</option>
+							<option>There should be more lessons</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Questions Difficulty:</label>
+						<select class="form-control" name="qeustionsDifficulty">
+							<option>Easy</option>
+							<option>Normal</option>
+							<option>Difficult</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Usage:</label>
+						<select class="form-control" name="usage">
+							<option>Everyday</option>
+							<option>Often</option>
+							<option>Somtimes</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Rate Us:</label>
+						<select class="form-control" name="rate">
+							<option>Excellent</option>
+							<option>I like it, but needs to improve</option>
+						</select>
+					</div>
+					<button id="submitFormBtn" type="submit" class="btn pull-right">Submit</button>
+				</form>
+			</div>
+		}
+
+		<footer class="row">Copyright 2017</footer>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
